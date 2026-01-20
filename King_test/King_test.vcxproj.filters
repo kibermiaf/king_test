@@ -13,5 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{dbd68cb3-01ef-4db2-abd7-0183c65a24a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MessageService">
+      <UniqueIdentifier>{42d0f393-ebce-4703-8420-35473dce9242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{87951455-098e-49c0-8f1f-bc00dbc800c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MessageService">
+      <UniqueIdentifier>{fc31cc4b-3520-4a61-a82e-0b5ed5b45385}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MessageService\MessageService.cpp">
+      <Filter>Source Files\MessageService</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\CLI.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\MessageService\IMessageService.h">
+      <Filter>Header Files\MessageService</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MessageService\Message.h">
+      <Filter>Header Files\MessageService</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MessageService\MessageService.h">
+      <Filter>Header Files\MessageService</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\CLI.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
