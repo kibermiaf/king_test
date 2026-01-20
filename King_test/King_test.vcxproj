@@ -129,13 +129,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />
-    <ClCompile Include="source\MessageService\MessageService.cpp" />
+    <ClCompile Include="source\Core\MessageService.cpp" />
+
     <ClCompile Include="source\UI\CLI.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="source\MessageService\IMessageService.h" />
-    <ClInclude Include="source\MessageService\Message.h" />
-    <ClInclude Include="source\MessageService\MessageService.h" />
+    <ClInclude Include="source\Core\IMessageService.h" />
+    <ClInclude Include="source\Core\Message.h" />
+    <ClInclude Include="source\Core\MessageService.h" />
+
     <ClInclude Include="source\UI\CLI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

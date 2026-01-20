@@ -1,4 +1,4 @@
-#include "MessageService/MessageService.h"
+#include "Core/MessageService.h"
 #include "UI/CLI.h"
 #include <iostream>
 
