@@ -38,11 +38,14 @@ void CLI::run()
         {
             // EXECUTE the stored function
             it->second();
-        } else {
+        }
+		else
+		{
             std::cout << "Invalid option.\n";
         }
 
-        if (running) {
+        if (running)
+		{
             std::cout << "\nPress Enter to continue...";
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         }
@@ -82,14 +85,16 @@ void CLI::handleCreateUser()
 	}
 }
 
-void CLI::handleSendMessage() {
+void CLI::handleSendMessage()
+{
 	std::string from = promptLine("From: ");
 	std::string to = promptLine("To: ");
 	std::string msg = promptLine("Message: ");
 
 	auto result = _service.sendMessage(from, to, msg);
 
-	switch (result) {
+	switch (result)
+	{
 	case Core::IMessageService::SendResult::Success:
 		std::cout << "[SUCCESS] Message sent!\n";
 		break;
@@ -124,7 +129,7 @@ void CLI::handleReceiveMessages()
 	else 
 	{
 		int count = 1;
-		for (const auto& msg : messages) 
+		for (const auto& msg : messages)
 		{
 			std::cout << "--- Message " << count++ << " ---\n";
 			std::cout << "From:    " << msg.from << "\n";
